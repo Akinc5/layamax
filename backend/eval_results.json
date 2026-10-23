@@ -1,0 +1,440 @@
+{
+  "timestamp": "2026-09-28T09:06:49.483037Z",
+  "suite_version": "1.0.0",
+  "summary": {
+    "sentiment_f1": 0.877,
+    "topic_f1": 0.904,
+    "precision_at_1": 0.88,
+    "precision_at_3": 0.3067,
+    "precision_at_5": 0.192,
+    "recall_at_1": 0.88,
+    "recall_at_3": 0.92,
+    "recall_at_5": 0.96,
+    "mrr": 0.912,
+    "ndcg_at_5": 0.9207,
+    "retrieval_latency_p50_ms": 4.31,
+    "retrieval_latency_p95_ms": 5.41,
+    "classifier_latency_p50_ms": 0.36,
+    "classifier_latency_p95_ms": 0.62,
+    "embedding_latency_p50_ms": 5.18,
+    "end_to_end_latency_p50_ms": 22.02,
+    "end_to_end_latency_p95_ms": 33.51,
+    "throughput_events_per_second": 36.0
+  },
+  "classification": {
+    "topic_classification": {
+      "total_samples": 120,
+      "accuracy": 0.8917,
+      "macro_precision": 0.9404,
+      "macro_recall": 0.8917,
+      "macro_f1": 0.904,
+      "weighted_precision": 0.9404,
+      "weighted_recall": 0.8917,
+      "weighted_f1": 0.904,
+      "per_class": {
+        "AI": {
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1": 0.8889,
+          "support": 10
+        },
+        "Machine Learning": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1": 0.9474,
+          "support": 10
+        },
+        "Technology": {
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1": 0.9,
+          "support": 10
+        },
+        "Startups": {
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1": 0.8889,
+          "support": 10
+        },
+        "Finance": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1": 0.9474,
+          "support": 10
+        },
+        "Politics": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1": 0.9474,
+          "support": 10
+        },
+        "Sports": {
+          "precision": 0.9091,
+          "recall": 1.0,
+          "f1": 0.9524,
+          "support": 10
+        },
+        "Science": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1": 0.9474,
+          "support": 10
+        },
+        "Cybersecurity": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1": 0.9474,
+          "support": 10
+        },
+        "Climate": {
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1": 0.8889,
+          "support": 10
+        },
+        "Gaming": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1": 0.9474,
+          "support": 10
+        },
+        "Other": {
+          "precision": 0.4762,
+          "recall": 1.0,
+          "f1": 0.6452,
+          "support": 10
+        }
+      },
+      "labels": [
+        "AI",
+        "Machine Learning",
+        "Technology",
+        "Startups",
+        "Finance",
+        "Politics",
+        "Sports",
+        "Science",
+        "Cybersecurity",
+        "Climate",
+        "Gaming",
+        "Other"
+      ],
+      "confusion_matrix": [
+        [
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          9,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ]
+    },
+    "sentiment_classification": {
+      "total_samples": 120,
+      "accuracy": 0.875,
+      "macro_precision": 0.8962,
+      "macro_recall": 0.879,
+      "macro_f1": 0.877,
+      "weighted_precision": 0.904,
+      "weighted_recall": 0.875,
+      "weighted_f1": 0.8791,
+      "per_class": {
+        "positive": {
+          "precision": 1.0,
+          "recall": 0.8261,
+          "f1": 0.9048,
+          "support": 46
+        },
+        "neutral": {
+          "precision": 0.72,
+          "recall": 0.973,
+          "f1": 0.8276,
+          "support": 37
+        },
+        "negative": {
+          "precision": 0.9688,
+          "recall": 0.8378,
+          "f1": 0.8986,
+          "support": 37
+        }
+      },
+      "labels": [
+        "positive",
+        "neutral",
+        "negative"
+      ],
+      "confusion_matrix": [
+        [
+          38,
+          8,
+          0
+        ],
+        [
+          0,
+          36,
+          1
+        ],
+        [
+          0,
+          6,
+          31
+        ]
+      ]
+    },
+    "classifier_latency_profile": {
+      "count": 120,
+      "mean": 0.41,
+      "stddev": 0.21,
+      "min": 0.32,
+      "p50": 0.36,
+      "p90": 0.51,
+      "p95": 0.62,
+      "p99": 1.16,
+      "max": 2.37
+    }
+  },
+  "retrieval": {
+    "num_queries": 25,
+    "mrr": 0.912,
+    "map": 0.912,
+    "precision@1": 0.88,
+    "recall@1": 0.88,
+    "hit_rate@1": 0.88,
+    "ndcg@1": 0.88,
+    "precision@3": 0.3067,
+    "recall@3": 0.92,
+    "hit_rate@3": 0.92,
+    "ndcg@3": 0.9052,
+    "precision@5": 0.192,
+    "recall@5": 0.96,
+    "hit_rate@5": 0.96,
+    "ndcg@5": 0.9207,
+    "precision@10": 0.1,
+    "recall@10": 1.0,
+    "hit_rate@10": 1.0,
+    "ndcg@10": 0.9323,
+    "retrieval_latency_profile": {
+      "count": 25,
+      "mean": 4.33,
+      "stddev": 0.65,
+      "min": 3.36,
+      "p50": 4.31,
+      "p90": 4.99,
+      "p95": 5.41,
+      "p99": 6.3,
+      "max": 6.57
+    }
+  },
+  "performance": {
+    "embedding_latency": {
+      "count": 100,
+      "mean": 5.22,
+      "stddev": 0.66,
+      "min": 4.09,
+      "p50": 5.18,
+      "p90": 6.12,
+      "p95": 6.44,
+      "p99": 6.98,
+      "max": 7.09
+    },
+    "vector_search_latency": {
+      "count": 100,
+      "mean": 0.0,
+      "stddev": 0.0,
+      "min": 0.0,
+      "p50": 0.0,
+      "p90": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.01
+    },
+    "llm_inference_latency": {
+      "count": 25,
+      "mean": 579.94,
+      "stddev": 144.81,
+      "min": 368.07,
+      "p50": 607.45,
+      "p90": 767.76,
+      "p95": 776.5,
+      "p99": 782.68,
+      "max": 784.12
+    },
+    "end_to_end_pipeline_latency": {
+      "count": 100,
+      "mean": 24.7,
+      "stddev": 9.37,
+      "min": 18.34,
+      "p50": 22.02,
+      "p90": 30.95,
+      "p95": 33.51,
+      "p99": 52.31,
+      "max": 102.04
+    },
+    "throughput": {
+      "total_events_processed": 100,
+      "duration_seconds": 2.781,
+      "events_per_second": 36.0
+    }
+  }
+}
